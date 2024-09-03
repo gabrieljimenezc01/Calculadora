@@ -125,7 +125,14 @@
             currentInput = result.toString();
             updateDisplay();
         }
-        
+
+        function convertirPeso() {
+            if (currentInput === '') return;
+            let result = parseFloat(currentInput) / 1000;
+            currentInput = result.toString();
+            updateDisplay();
+        }
+
         function clearDisplay() {
             currentInput = '';
             operator = '';
