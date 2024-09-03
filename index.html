@@ -140,6 +140,13 @@
             currentInput = result.toString();
             updateDisplay();
         }
+        function convertirMoneda() {
+            if (currentInput === '') return;
+            let cambioD = 0.00024; 
+            let result = parseFloat(currentInput) * cambioD;
+            currentInput = result.toFixed(2); 
+            updateDisplay();
+        }
 
         function clearDisplay() {
             currentInput = '';
