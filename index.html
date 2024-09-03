@@ -119,6 +119,13 @@
             updateDisplay();
         }
 
+        function convertToFahrenheit() {
+            if (currentInput === '') return;
+            let result = (parseFloat(currentInput) * 1.8) + 32;
+            currentInput = result.toString();
+            updateDisplay();
+        }
+        
         function clearDisplay() {
             currentInput = '';
             operator = '';
